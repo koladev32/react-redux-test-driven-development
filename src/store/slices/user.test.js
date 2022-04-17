@@ -5,9 +5,7 @@ import reducer, {
     addUser,
     updateUser,
     deleteUser,
-  } from "../user";
-  
-  import { store } from "../..";
+  } from "./user";
   import {
     mockNetWorkResponse,
     userId,
@@ -15,7 +13,8 @@ import reducer, {
     getUserListResponse,
     getCreateUserResponse,
     getUserUpdateResponse,
-  } from "../../../utils/tests.data";
+  } from "../../utils/tests.data";
+  import { store } from "../";
   
   /**
    * Testing the initial state

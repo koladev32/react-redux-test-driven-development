@@ -43,11 +43,11 @@ const getUserListResponse = [
 
 const mockNetWorkResponse = () => {
   const mock = new MockAdapter(axios);
-  mock.onGet(`/user/?id=${userId}`).reply(200, [getUserResponse]);
-  mock.onGet(`/user/`).reply(200, getUserListResponse);
-  mock.onPost(`/user/`).reply(200, getCreateUserResponse);
-  mock.onPut(`/user/${userId}`).reply(200, getUserUpdateResponse);
-  mock.onDelete(`/user/${userId}`).reply(200);
+  mock.onGet(`/users/?id=${userId}`).reply(200, [getUserResponse]);
+  mock.onGet(`/users/`).reply(200, getUserListResponse);
+  mock.onPost(`/users/`).reply(200, getCreateUserResponse);
+  mock.onPut(`/users/${userId}`).reply(200, getUserUpdateResponse);
+  mock.onDelete(`/users/${userId}`).reply(200);
 };
 
 export {
