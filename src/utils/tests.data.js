@@ -39,6 +39,8 @@ const getUserListResponse = [
   },
 ];
 
+// Adding mock network response that is used in tests
+
 const mockNetWorkResponse = () => {
   const mock = new MockAdapter(axios);
   mock.onGet(`/user/?id=${userId}`).reply(200, [getUserResponse]);
